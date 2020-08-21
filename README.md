@@ -1,3 +1,3 @@
-# SSBMessage
+# SSBValidate
 
 A description of this package.

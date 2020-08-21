@@ -8,10 +8,6 @@
 // See AUTHORS for the list of the project authors.
 //
 
-import XCTest
-
-import SSBValidateTests
-
-var tests = [XCTestCaseEntry]()
-tests += MessageTests.allTests()
-XCTMain(tests)
+struct ID {
+    
+}

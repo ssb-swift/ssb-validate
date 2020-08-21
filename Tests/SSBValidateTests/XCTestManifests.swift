@@ -10,8 +10,10 @@
 
 import XCTest
 
-import SSBValidateTests
-
-var tests = [XCTestCaseEntry]()
-tests += MessageTests.allTests()
-XCTMain(tests)
+#if !canImport(ObjectiveC)
+public func allTests() -> [XCTestCaseEntry] {
+    return [
+        testCase(MessageTests.allTests),
+    ]
+}
+#endif

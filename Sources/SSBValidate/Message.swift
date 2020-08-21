@@ -8,10 +8,12 @@
 // See AUTHORS for the list of the project authors.
 //
 
-import XCTest
-
-import SSBValidateTests
-
-var tests = [XCTestCaseEntry]()
-tests += MessageTests.allTests()
-XCTMain(tests)
+public struct Message {
+    let previous: String?
+    let author: ID
+    let sequence: UInt
+    let timestamp: UInt
+    let hash: String
+    let content: Content
+    let signature: String
+}
